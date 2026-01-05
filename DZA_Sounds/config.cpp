@@ -2,14 +2,20 @@ class CfgPatches
 {
 	class DZ_Buildings
 	{
-		units[]=
-		{
-			"Trader_Sound",
-			"Kathowa_Radio_Sound",
-			"Katja_Radio_Sound",
-			"Knetka_Radio_Sound",
-			"Soviet_War_Radio_Sound",
-		};
+                units[]=
+                {
+                        "Trader_Sound",
+                        "Kathowa_Radio_Sound",
+                        "Katja_Radio_Sound",
+                        "Knetka_Radio_Sound",
+                        "Soviet_War_Radio_Sound",
+                        "Johnny_Gutair_Radio_Sound",
+                        "Shadow_Valley_Radio_Sound",
+                        "Mad_About_Boy_Radio_Sound",
+                        "Something_Gotta_Give_Radio_Sound",
+                        "Midnight_Ranger_Radio_Sound",
+                        "Do_It_Right_Radio_Sound",
+                };
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -52,11 +58,47 @@ class CfgVehicles
 		model="DZ\gear\radio\unitra_wilga.p3d";
 	};
 	
-	class Soviet_War_Radio_Sound: HouseNoDestruct
-	{
-		scope=2;
-		model="DZ\gear\radio\unitra_wilga.p3d";
-	};
+        class Soviet_War_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Johnny_Gutair_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Shadow_Valley_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Mad_About_Boy_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Something_Gotta_Give_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Midnight_Ranger_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
+
+        class Do_It_Right_Radio_Sound: HouseNoDestruct
+        {
+                scope=2;
+                model="DZ\gear\radio\unitra_wilga.p3d";
+        };
 };
 
 // Add your custom class above, each section above is creating an item which will play music
@@ -122,19 +164,103 @@ class CfgSoundShaders
 		volume=2;
 	};
 
-	class Soviet_War_Radio_SoundShader
-	{
-		samples[]=
-		{
-			
+        class Soviet_War_Radio_SoundShader
+        {
+                samples[]=
+                {
+
 			{
 				"DZA_Sounds\Sounds\Soviet_War_Song.ogg",
 				1
 			}
-		};
-		range=20;
-		volume=2;
-	};
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Johnny_Gutair_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\johnny_gutair.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Shadow_Valley_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\shadow_valley.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Mad_About_Boy_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\mad_about_boy.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Something_Gotta_Give_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\something_gotta_give.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Midnight_Ranger_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\midnight_ranger.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
+
+        class Do_It_Right_Radio_SoundShader
+        {
+                samples[]=
+                {
+
+                        {
+                                "DZA_Sounds\Sounds\do_it_right.ogg",
+                                1
+                        }
+                };
+                range=20;
+                volume=2;
+        };
 };
 
 // So above you are making a soundshader which basically just tells the game "this sound shader plays this song"
@@ -176,13 +302,61 @@ class CfgSoundSets
 		};
 	};
 
-	class Soviet_War_Radio_SoundSet
-	{
-		soundShaders[]=
-		{
-			"Soviet_War_Radio_SoundShader"
-		};
-	};
+        class Soviet_War_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Soviet_War_Radio_SoundShader"
+                };
+        };
+
+        class Johnny_Gutair_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Johnny_Gutair_Radio_SoundShader"
+                };
+        };
+
+        class Shadow_Valley_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Shadow_Valley_Radio_SoundShader"
+                };
+        };
+
+        class Mad_About_Boy_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Mad_About_Boy_Radio_SoundShader"
+                };
+        };
+
+        class Something_Gotta_Give_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Something_Gotta_Give_Radio_SoundShader"
+                };
+        };
+
+        class Midnight_Ranger_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Midnight_Ranger_Radio_SoundShader"
+                };
+        };
+
+        class Do_It_Right_Radio_SoundSet
+        {
+                soundShaders[]=
+                {
+                        "Do_It_Right_Radio_SoundShader"
+                };
+        };
 };
 
 // Above here you can then create the soundset which basically just says to the game
